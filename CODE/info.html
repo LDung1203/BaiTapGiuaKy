@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Đăng Ký</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading text-center">
+      <h2><strong>Bảng Đăng Ký</strong></h2>
+    </div>
+    <div class="panel-body">
+      <form action="display.php" method="post">
+        <div class="form-group">
+          <label for="id">ID</label>
+          <input type="text" id="id" name="id" placeholder="Điền ID" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="fullname">Họ và tên</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Điền họ và tên" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="dob">Ngày sinh</label>
+          <input type="date" id="dob" name="dob" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Giới tính</label><br>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="male" value="male"> Nam
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" id="female" value="female"> Nữ
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="hometown">Địa chỉ</label>
+          <input type="hometown" id="hometown" name="hometown" placeholder="Điền địa chỉ" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="lever">Trình độ</label>
+            <input type="text" id="lever" name="lever" placeholder="Điền trình độ" class="form-control">
+          </div>
+        <div class="form-group">
+          <label for="group">ID nhóm</label>
+          <input type="text" id="group_id" name="group_id" placeholder="Điền ID nhóm" class="form-control">
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-lg">Gửi thông tin</button>
+          <button type="reset" class="btn btn-danger btn-lg">Nhập lại</button>
+          <a href="display.php" class="btn btn-info">Xem thông tin</a>
+          <a href="index.html" class="btn btn-info">Trang chủ</a>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

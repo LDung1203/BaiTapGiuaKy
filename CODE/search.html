@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+        }
+        input {
+            width: 500px;
+            height: 40px;
+        }
+        a {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tìm kiếm học viên</h1>
+    <form method="GET" action="perform-search.php">
+        <label for="keyword">Nhập từ khóa:</label>
+        <input type="text" name="keyword" id="keyword" placeholder="Nhập tên hoặc quê quán" required autocomplete="off">
+        <button type="submit">Tìm kiếm</button>
+    </form>
+    <a href="index.html" class="btn btn-info">Trang chủ</a>
+</body>
+</html>
