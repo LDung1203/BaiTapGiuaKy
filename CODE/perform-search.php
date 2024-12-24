@@ -1,11 +1,6 @@
 <?php
 // Kết nối cơ sở dữ liệu
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "qlsv_luuducanhdung";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+include("connect.php");
 
 // Kiểm tra kết nối
 if ($conn->connect_error) {
